@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>John Bernard Mendoza — Full-Stack Developer</title>
+<meta name="description" content="Portfolio of John Bernard Mendoza — Full-Stack Developer, ML Engineer, AWS Certified Cloud Practitioner based in Davao City, Philippines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: #0a0e12; color: #e6edf3; font-family: 'IBM Plex Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  ::selection { background: #7ee787; color: #0a0e12; }
+  a { color: #7ee787; text-decoration: none; }
+  a:hover { color: #a5f3b4; }
+  @keyframes riseIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes blink { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+
+  .nav-link { color: #8b98a5; transition: color .15s ease; }
+  .nav-link:hover { color: #7ee787; }
+
+  .btn-primary { display: inline-flex; align-items: center; gap: 10px; padding: 13px 24px; background: #7ee787; color: #0a0e12; font-family: 'JetBrains Mono', monospace; font-weight: 600; font-size: 14px; border-radius: 8px; transition: background .15s ease; }
+  .btn-primary:hover { background: #a5f3b4; color: #0a0e12; }
+
+  .btn-outline { display: inline-flex; align-items: center; gap: 10px; padding: 13px 24px; background: transparent; color: #e6edf3; font-family: 'JetBrains Mono', monospace; font-weight: 600; font-size: 14px; border: 1px solid #2a343e; border-radius: 8px; transition: border-color .15s ease, color .15s ease; }
+  .btn-outline:hover { border-color: #7ee787; color: #7ee787; }
+
+  .live-link { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 600; color: #7ee787; border: 1px solid #234230; padding: 9px 15px; border-radius: 8px; transition: background .15s ease; }
+  .live-link:hover { background: rgba(126,231,135,0.08); }
+
+  .bg-grid { position: absolute; inset: -40px 0 0 0; z-index: 0; background-image: linear-gradient(#141b22 1px, transparent 1px), linear-gradient(90deg, #141b22 1px, transparent 1px); background-size: 44px 44px; -webkit-mask-image: radial-gradient(ellipse 70% 60% at 30% 30%, #000 0%, transparent 78%); mask-image: radial-gradient(ellipse 70% 60% at 30% 30%, #000 0%, transparent 78%); pointer-events: none; }
+
+  @media (max-width: 720px) {
+    nav div.nav-links { display: none !important; }
+    section#about > div { grid-template-columns: 1fr !important; }
+    article { grid-template-columns: 1fr !important; }
+    article a.live-link { justify-content: center; }
+  }
+</style>
+</head>
+<body>
+<div style="max-width: 1080px; margin: 0 auto; padding: 0 32px;">
+
+  <nav style="position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; padding: 20px 0; background: rgba(10,14,18,0.82); backdrop-filter: blur(10px); border-bottom: 1px solid #1a2129;">
+    <a href="#top" style="font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 15px; color: #e6edf3; letter-spacing: -0.02em;">jbm<span style="color: #7ee787;">.dev</span></a>
+    <div class="nav-links" style="display: flex; gap: 28px; font-family: 'JetBrains Mono', monospace; font-size: 13px;">
+      <a class="nav-link" href="#about">about</a>
+      <a class="nav-link" href="#projects">projects</a>
+      <a class="nav-link" href="#skills">skills</a>
+      <a class="nav-link" href="#experience">experience</a>
+      <a class="nav-link" href="#certs">certs</a>
+    </div>
+  </nav>
+
+  <section id="top" style="padding: 120px 0 100px; position: relative;">
+    <div class="bg-grid"></div>
+    <div style="position: relative; z-index: 1; animation: riseIn 0.7s ease both;">
+      <p style="font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #7ee787; margin-bottom: 22px;">$ whoami</p>
+      <h1 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(44px, 7vw, 84px); line-height: 1.02; letter-spacing: -0.03em; color: #f4f8fb; margin-bottom: 26px;">John Bernard<br>Mendoza<span style="color: #7ee787;">.</span></h1>
+      <p style="font-family: 'JetBrains Mono', monospace; font-size: clamp(15px, 2vw, 20px); color: #c9d3dd; margin-bottom: 20px; letter-spacing: -0.01em;">Full-Stack Developer<span style="color: #47535f;"> | </span>ML Engineer<span style="color: #47535f;"> | </span>Cloud Practitioner</p>
+      <p style="display: flex; align-items: center; gap: 9px; font-size: 15px; color: #8b98a5; margin-bottom: 40px;"><span style="width: 8px; height: 8px; border-radius: 50%; background: #7ee787; box-shadow: 0 0 10px #7ee787; display: inline-block;"></span>Davao City, Philippines</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 14px;">
+        <a class="btn-primary" href="https://github.com/ExarKun28" target="_blank" rel="noopener">
+          <svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
+        </a>
+        <a class="btn-outline" href="mailto:jedmendoza101@gmail.com">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" style="padding: 70px 0; border-top: 1px solid #1a2129;">
+    <p style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #7ee787; margin-bottom: 14px;">01 / about</p>
+    <div style="display: grid; grid-template-columns: 1fr 1.4fr; gap: 56px; align-items: start;">
+      <h2 style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 32px; letter-spacing: -0.02em; color: #f4f8fb;">A fresh IS grad building end-to-end.</h2>
+      <div style="display: flex; flex-direction: column; gap: 20px; font-size: 16.5px; line-height: 1.7; color: #b4c0cc;">
+        <p>Fresh Information Systems graduate from Mapúa Malayan Colleges Mindanao, with hands-on experience across full-stack development, machine learning, and customer service.</p>
+        <p>I like shipping complete systems — from data models and ML pipelines to the interfaces people actually use. I'm an <span style="color: #e6edf3; font-weight: 600;">AWS Certified Cloud Practitioner</span> and comfortable working across the stack and the cloud.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" style="padding: 70px 0; border-top: 1px solid #1a2129;">
+    <p style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #7ee787; margin-bottom: 14px;">02 / projects</p>
+    <h2 style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 32px; letter-spacing: -0.02em; color: #f4f8fb; margin-bottom: 40px;">Selected work</h2>
+    <div style="display: flex; flex-direction: column; gap: 22px;">
+
+      <article style="background: #10151b; border: 1px solid #1e262e; border-radius: 14px; padding: 34px; display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: start;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #7ee787; border: 1px solid #234230; background: rgba(126,231,135,0.07); padding: 3px 9px; border-radius: 20px;">blockchain</span>
+            <span style="display: inline-flex; align-items: center; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #8b98a5;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #7ee787; display: inline-block; animation: blink 1.4s steps(1) infinite;"></span>live</span>
+          </div>
+          <h3 style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 24px; letter-spacing: -0.01em; color: #f4f8fb; margin-bottom: 10px;">Salig — Blockchain-Enabled Cash Flow Monitoring System</h3>
+          <p style="font-size: 15.5px; line-height: 1.65; color: #a3afba; margin-bottom: 20px; max-width: 62ch;">A cash-flow monitoring platform backed by a permissioned blockchain ledger for tamper-evident financial records, with a real-time dashboard.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #c9d3dd; background: #171e25; border: 1px solid #232c35; padding: 5px 11px; border-radius: 6px;">React</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #c9d3dd; background: #171e25; border: 1px solid #232c35; padding: 5px 11px; border-radius: 6px;">Node.js</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #c9d3dd; background: #171e25; border: 1px solid #232c35; padding: 5px 11px; border-radius: 6px;">Hyperledger Fabric 2.2</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #c9d3dd; background: #171e25; border: 1px solid #232c35; padding: 5px 11px; border-radius: 6px;">AWS</span>
+          </div>
+        </div>
+        <a class="live-link" href="https://main.dozwbaqznt112.amplifyapp.com/dashboard" target="_blank" rel="noopener">
+          Live demo
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <article style="background: #10151b; border: 1px solid #1e262e; border-radius: 14px; padding: 34px; display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: start;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #7ee787; border: 1px solid #234230; background: rgba(126,231,135,0.07); padding: 3px 9px; border-radius: 20px;">machine learning</span>
+            <span style="display: inline-flex; align-items: center; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #8b98a5;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #7ee787; display: inline-block; animation: blink 1.4s steps(1) infinite;"></span>live</span>
+          </div>
+          <h3 style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 24px; letter-spacing: -0.01em; color: #f4f8fb; margin-bottom: 10px;">Board Exam Predictive Analytics System</h3>
+          <p style="font-size: 15.5px; line-height: 1.65; color: #a3afba; margin-bottom: 20px; max-width: 62ch;">A predictive dashboard that forecasts board-exam performance using a Random Forest model trained on student academic data, surfacing at-risk cohorts.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #c9d3dd; background: #171e25; border: 1px solid #232c35; padding: 5px 11px; border-radius: 6px;">Django</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #c9d3dd; background: #171e25; border: 1px solid #232c35; padding: 5px 11px; border-radius: 6px;">React</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #c9d3dd; background: #171e25; border: 1px solid #232c35; padding: 5px 11px; border-radius: 6px;">PostgreSQL</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #c9d3dd; background: #171e25; border: 1px solid #232c35; padding: 5px 11px; border-radius: 6px;">scikit-learn</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #c9d3dd; background: #171e25; border: 1px solid #232c35; padding: 5px 11px; border-radius: 6px;">Random Forest</span>
+          </div>
+        </div>
+        <a class="live-link" href="https://predictive-dashboard-production.up.railway.app" target="_blank" rel="noopener">
+          Live demo
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="skills" style="padding: 70px 0; border-top: 1px solid #1a2129;">
+    <p style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #7ee787; margin-bottom: 14px;">03 / skills</p>
+    <h2 style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 32px; letter-spacing: -0.02em; color: #f4f8fb; margin-bottom: 40px;">Stack &amp; tooling</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 40px 48px;">
+      <div>
+        <p style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #6b7885; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px;">Languages</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">JavaScript</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">TypeScript</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">Python</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">Go</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">SQL</span>
+        </div>
+      </div>
+      <div>
+        <p style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #6b7885; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px;">Frameworks</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">React</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">Node.js</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">Django</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">scikit-learn</span>
+        </div>
+      </div>
+      <div>
+        <p style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #6b7885; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px;">Cloud &amp; Data</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">AWS</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">Supabase</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">PostgreSQL</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">Hyperledger Fabric</span>
+        </div>
+      </div>
+      <div>
+        <p style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #6b7885; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px;">Tools</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">Git</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">Figma</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">Canva</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">Microsoft Office</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">Claude AI</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d5dee6; background: #12171d; border: 1px solid #232c35; padding: 7px 13px; border-radius: 7px;">ChatGPT</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" style="padding: 70px 0; border-top: 1px solid #1a2129;">
+    <p style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #7ee787; margin-bottom: 14px;">04 / experience</p>
+    <h2 style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 32px; letter-spacing: -0.02em; color: #f4f8fb; margin-bottom: 40px;">Where I've worked</h2>
+    <div style="display: flex; flex-direction: column;">
+      <div style="display: grid; grid-template-columns: 200px 1fr; gap: 32px; padding: 26px 0; border-top: 1px solid #1a2129;">
+        <p style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #8b98a5; padding-top: 4px;">ML Intern</p>
+        <div>
+          <h3 style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; color: #f4f8fb; margin-bottom: 6px;">Machine Learning Intern</h3>
+          <p style="font-size: 15px; color: #a3afba; line-height: 1.6;">Mapúa Malayan Colleges Mindanao (MMCM) — built and evaluated ML models supporting academic analytics research.</p>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: 200px 1fr; gap: 32px; padding: 26px 0; border-top: 1px solid #1a2129;">
+        <p style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #8b98a5; padding-top: 4px;">CSR</p>
+        <div>
+          <h3 style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; color: #f4f8fb; margin-bottom: 6px;">Customer Service Representative</h3>
+          <p style="font-size: 15px; color: #a3afba; line-height: 1.6;">VXI Global Solutions — DirecTV account. Handled customer accounts and technical support, building strong communication and problem-solving skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certs" style="padding: 70px 0; border-top: 1px solid #1a2129;">
+    <p style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #7ee787; margin-bottom: 14px;">05 / certifications</p>
+    <h2 style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 32px; letter-spacing: -0.02em; color: #f4f8fb; margin-bottom: 40px;">Certifications</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px;">
+      <div style="display: flex; align-items: center; gap: 13px; background: #10151b; border: 1px solid #1e262e; border-radius: 10px; padding: 16px 18px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7ee787" stroke-width="2" style="flex-shrink: 0;"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+        <span style="font-size: 14.5px; color: #d5dee6;">AWS Certified Cloud Practitioner</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 13px; background: #10151b; border: 1px solid #1e262e; border-radius: 10px; padding: 16px 18px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7ee787" stroke-width="2" style="flex-shrink: 0;"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+        <span style="font-size: 14.5px; color: #d5dee6;">IBM Business Analyst</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 13px; background: #10151b; border: 1px solid #1e262e; border-radius: 10px; padding: 16px 18px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7ee787" stroke-width="2" style="flex-shrink: 0;"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+        <span style="font-size: 14.5px; color: #d5dee6;">Google Project Management</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 13px; background: #10151b; border: 1px solid #1e262e; border-radius: 10px; padding: 16px 18px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7ee787" stroke-width="2" style="flex-shrink: 0;"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+        <span style="font-size: 14.5px; color: #d5dee6;">IBM Cybersecurity Analyst</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 13px; background: #10151b; border: 1px solid #1e262e; border-radius: 10px; padding: 16px 18px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7ee787" stroke-width="2" style="flex-shrink: 0;"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+        <span style="font-size: 14.5px; color: #d5dee6;">IBM Data Science</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 13px; background: #10151b; border: 1px solid #1e262e; border-radius: 10px; padding: 16px 18px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7ee787" stroke-width="2" style="flex-shrink: 0;"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+        <span style="font-size: 14.5px; color: #d5dee6;">CCNA</span>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding: 70px 0 90px; border-top: 1px solid #1a2129;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 32px;">
+      <div>
+        <p style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #7ee787; margin-bottom: 14px;">$ contact --me</p>
+        <h2 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(28px, 4vw, 44px); letter-spacing: -0.02em; color: #f4f8fb; margin-bottom: 20px;">Let's build something.</h2>
+        <div style="display: flex; gap: 22px; font-family: 'JetBrains Mono', monospace; font-size: 14px;">
+          <a href="mailto:jedmendoza101@gmail.com">jedmendoza101@gmail.com</a>
+          <a href="https://github.com/ExarKun28" target="_blank" rel="noopener">github.com/ExarKun28</a>
+        </div>
+      </div>
+      <p style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #55626e;">© 2026 John Bernard Mendoza</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
